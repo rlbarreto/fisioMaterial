@@ -1,11 +1,19 @@
-<md-toolbar layout="row" layout-align="center center" ng-controller="NavbarCtrl">
-	<md-button href="https://github.com/Swiip/generator-gulp-angular">Gulp Angular</md-button>
-</md-toolbar>
-<md-tabs md-dynamic-height md-border-bottom >
-      <md-tab label="one">
-      </md-tab>
-      <md-tab label="two">
-      </md-tab>
-      <md-tab label="three">
-      </md-tab>
-    </md-tabs>
+<div flex-item >
+    <div class="card">
+        <div class="toolbar">
+            <span class="toolbar__label fs-title ml">Fisio</span>
+
+            <div class="toolbar__right">
+                <lx-search-filter model="searchFilter.second" position="left" filter-width="100%"></lx-search-filter>
+            </div>
+        </div>
+    </div>
+</div>
+
+<md-tabs md-dynamic-height md-border-bottom md-selected="0">
+	<md-tab label="Pacientes">
+	</md-tab>
+	<md-tab label="Especialidades">
+	</md-tab>
+</md-tabs>
+
