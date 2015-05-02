@@ -1,2 +1,5 @@
-<div>
+<div layout="row">
+	<md-card class="card" ng-repeat="paciente in ::pac.pacientes" flex="33">
+	    {{::paciente.nome}}
+	</md-card>
 </div>

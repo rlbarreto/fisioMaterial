@@ -4,11 +4,26 @@ angular.module('test', ['ngAnimate', 'ngCookies', 'ngSanitize', 'restangular', '
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
+      	abstract: true,
         url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
+        views: {
+        	'inicio' : {
+		        templateUrl: 'app/main/main.html',
+		        controller: 'MainCtrl'		
+        	}
+        }
+        
+      })
+      .state('home.pacientes', {
+      	url: 'pacientes/',
+      	views: {
+	      	'conteudo': {
+	      		templateUrl: 'app/components/pacientes/pacientes.html',
+	      		controller: 'PacientesController as pac'
+	      	}
+      	}
       });
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/pacientes/');
   })
 ;
