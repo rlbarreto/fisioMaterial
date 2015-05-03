@@ -39,7 +39,23 @@ md-sidenav{
   }
 }
 
+md-card {
+  md-card-content {
+    padding: 0 16px !important;
+  }
+}
 
+.md-card-image {
+  &.thumbnail {
+    display: block;
+    width: 60 !important; 
+    height: auto !important; 
+    max-width: 60px !important; 
+    max-height: 80px !important; 
+    min-height: 40px;
+    min-width: 30px;
+  }
+}
 
 
 

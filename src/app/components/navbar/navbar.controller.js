@@ -1,6 +1,10 @@
-'use strict';
+;(function() {
+	'use strict';
 
-angular.module('test')
-  .controller('NavbarCtrl', function ($scope) {
-    $scope.date = new Date();
-  });
+	angular.module('test')
+	  .controller('NavbarController', function ($state, navbarService) {
+	    this.date = new Date();
+	    this.stateService = $state;
+	    this.selectedTab = navbarService.selectedTab;
+	  });
+})();
