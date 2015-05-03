@@ -57,6 +57,13 @@ md-card {
   }
 }
 
+.md-fab {
+  &.adicionar {
+    bottom: 5px;
+    right: 15px;
+    position: fixed;
+  }
+}
 
 
 section.jumbotron {
